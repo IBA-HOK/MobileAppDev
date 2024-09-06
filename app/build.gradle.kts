@@ -40,4 +40,9 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
+
+    //天気用の追加部分(APIリクエスト送信用)
+    implementation("com.squareup.retrofit2:retrofit:2.9.0") //Retrofitライブラリ
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0") //Gsonコンバータ
+
 }
