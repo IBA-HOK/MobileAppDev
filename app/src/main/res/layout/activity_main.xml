@@ -8,12 +8,80 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/setting"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:text="設定画面"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@id/SundayButton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <Button
+        android:id="@+id/SundayButton"
+        android:layout_width="57dp"
+        android:layout_height="wrap_content"
+        android:text="日"
+        android:layout_marginLeft="5dp"
+        app:layout_constraintEnd_toStartOf="@+id/MondayButton"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/setting" />
+
+    <Button
+        android:id="@+id/MondayButton"
+        android:layout_width="57dp"
+        android:layout_height="wrap_content"
+        android:text="月"
+        app:layout_constraintEnd_toStartOf="@+id/TuesdayButton"
+        app:layout_constraintStart_toEndOf="@id/SundayButton"
+        app:layout_constraintTop_toBottomOf="@id/setting" />
+
+    <Button
+        android:id="@+id/TuesdayButton"
+        android:layout_width="57dp"
+        android:layout_height="wrap_content"
+        android:text="火"
+        app:layout_constraintEnd_toStartOf="@+id/WednesdayButton"
+        app:layout_constraintStart_toEndOf="@id/MondayButton"
+        app:layout_constraintTop_toBottomOf="@id/setting" />
+
+    <Button
+        android:id="@+id/WednesdayButton"
+        android:layout_width="57dp"
+        android:layout_height="wrap_content"
+        android:text="水"
+        app:layout_constraintEnd_toStartOf="@+id/ThursdayButton"
+        app:layout_constraintStart_toEndOf="@id/TuesdayButton"
+        app:layout_constraintTop_toBottomOf="@id/setting" />
+
+    <Button
+        android:id="@+id/ThursdayButton"
+        android:layout_width="57dp"
+        android:layout_height="wrap_content"
+        android:text="木"
+        app:layout_constraintEnd_toStartOf="@+id/FridayButton"
+        app:layout_constraintStart_toEndOf="@id/WednesdayButton"
+        app:layout_constraintTop_toBottomOf="@id/setting" />
+
+    <Button
+        android:id="@+id/FridayButton"
+        android:layout_width="57dp"
+        android:layout_height="wrap_content"
+        android:text="金"
+        app:layout_constraintEnd_toStartOf="@+id/SaturdayButton"
+        app:layout_constraintStart_toEndOf="@id/ThursdayButton"
+        app:layout_constraintTop_toBottomOf="@id/setting" />
+
+    <Button
+        android:id="@+id/SaturdayButton"
+        android:layout_width="57dp"
+        android:layout_height="wrap_content"
+        android:text="土"
+        android:layout_marginRight="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/FridayButton"
+        app:layout_constraintTop_toBottomOf="@id/setting" />
 </androidx.constraintlayout.widget.ConstraintLayout>
