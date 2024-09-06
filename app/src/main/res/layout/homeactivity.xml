@@ -57,6 +57,30 @@
             android:id="@+id/button2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+
+            android:backgroundTint="#b0cde5"
+            android:text="もった!" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8sp">
+
+        <TextView
+            android:id="@+id/item3"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="項目3"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#b0cde5"
             android:text="もった!" />
     </LinearLayout>
 
@@ -180,8 +204,4 @@
 
     <!-- 追加のチェックリストアイテムも同様に作成可能 -->
 
-
-
 </LinearLayout>
-
-

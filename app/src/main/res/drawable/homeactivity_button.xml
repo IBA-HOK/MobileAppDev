@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item>
-        <shape android:shape="rectangle">
-            <!-- 角を丸めない（四角にする） -->
-            <corners android:radius="0dp" />
-            <!-- ボタンの背景色をオレンジに設定 -->
-            <solid android:color="#FFA500" />
-        </shape>
-    </item>
-</selector>
+<shape android:shape="rectangle" xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- ボタンの背景色をオレンジに設定 -->
+    <solid android:color="#FFFFFF" />
+
+    <!-- 角を丸めない（四角にする） -->
+    <corners android:radius="0dp" />
+
+</shape>
